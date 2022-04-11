@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Home from './Home.js'
-import {BrowserRouter as Router, Redirect, Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Navigate, Route} from 'react-router-dom'
 import routes from './routes'
 
 
@@ -16,12 +16,12 @@ class App extends React.Component {
   render() {
   return (
 <Router>
+  {/* <Routes>
 
- {/* Hand in Routes the lazy way for now */}
-    <Route exact path = '/home' render = {props => <Home {...props} activeRoute = {0} />} />
-    <Redirect exact path="/" to="/home" />
-
-
+    <Route exact path = '/' render = {props => <Home {...props} activeRoute = {0} />} />
+    <Route exact path="/" to="/home" />
+    </Routes> */}
+  <Home />
 </Router>
   );}
 }
