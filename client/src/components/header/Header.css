@@ -1,5 +1,9 @@
 /* header */
 
+.header > li {
+  cursor: pointer;
+}
+
 .header {
   display: block;
   max-width: 90%;

@@ -9,6 +9,18 @@ import { settings } from "./portfolio";
 import ReactGA from "react-ga";
 
 function App() {
+
+
+  const [load, updateLoad] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      updateLoad(false);
+    }, 1200);
+    
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     if (settings.googleTrackingID) {
       ReactGA.initialize(settings.googleTrackingID, {
@@ -26,17 +38,10 @@ function App() {
       <>
         <GlobalStyles />
         <div>
-          {useCursor ? (
-            <CursorProvider
-              color={themes[theme].cursor}
-              ringSize={25}
-              transitionTime={75}
-            >
-              <Main theme={themes[theme]} setTheme={setTheme} />
-            </CursorProvider>
-          ) : (
+        
+
             <Main theme={themes[theme]} setTheme={setTheme} />
-          )}
+ 
         </div>
       </>
     </ThemeProvider>

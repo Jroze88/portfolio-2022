@@ -11,6 +11,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.4.4",
     "baseui": "^9.109.0",
     "bootstrap": "^4.6.0",
     "fs": "0.0.1-security",

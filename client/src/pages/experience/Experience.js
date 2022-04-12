@@ -22,7 +22,7 @@ function Experience(props) {
             <div className="experience-heading-text-div">
               <h1
                 className="experience-heading-text"
-                style={{ color: theme.text }}
+                style={{ color: theme.accentColor  }}
               >
                 {experience.title}
               </h1>

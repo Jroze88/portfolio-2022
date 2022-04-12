@@ -11,18 +11,19 @@
 
 .skills-text {
   font-size: 20px;
+  line-height: 1.1;
 }
 
 .skills-text-div {
   margin-left: 50px;
-  margin-top: 3%;
+  margin-top: 1%;
   padding-top: 80px;
   font-family: "Google Sans Regular";
 }
 
 .skills-main-div > * {
   flex: 1;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .skills-image-div > * {

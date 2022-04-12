@@ -38,9 +38,12 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developing mobile applications using Flutter and native Android",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "🌀 Helping build and launch your big idea or tech solution",
+        "🌀 Implementing quality, scalable website or mobile app UI/UX Design",
+        "🌀 Creating application Back-End functionality web servers",
+        "🌀 Creating mobile apps for use on PC, Android and Apple devices",        
+        "🌀 Applying efficient design principles to save time and money on upkeep and development",
+        "🌀 Using a wide range of industry leading technologies",
       ],
       softwareSkills: [
         {
@@ -71,26 +74,25 @@ const skills = {
           style: {
             color: "#7377AD",
           },
+        },        {
+          skillName: "Python",
+          fontAwesomeClassname: "simple-icons:python",
+          style: {
+            color: "#7377AD",
+          },
         },
         {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
+          skillName: "Ubuntu",
+          fontAwesomeClassname: "simple-icons:ubuntu",
           style: {
             color: "#f89820",
           },
         },
         {
-          skillName: "Dart",
-          fontAwesomeClassname: "simple-icons:dart",
+          skillName: "Linux",
+          fontAwesomeClassname: "fa-linux",
           style: {
             color: "#29B0EE",
-          },
-        },
-        {
-          skillName: "Go",
-          fontAwesomeClassname: "simple-icons:go",
-          style: {
-            color: "#00A7D0",
           },
         },
         {
@@ -98,28 +100,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:dot-net",
           style: {
             color: "#029FCE",
-          },
-        },
-        {
-          skillName: "C#",
-          fontAwesomeClassname: "simple-icons:csharp",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: {
-            color: "#E94E32",
           },
         },
         {
@@ -167,8 +147,8 @@ const skills = {
           },
         },
         {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
+          skillName: "iPhone",
+          fontAwesomeClassname: "simple-icons:apple",
           style: {
             color: "#02569B",
           },
@@ -198,63 +178,17 @@ const skills = {
         },
       ],
     },
+    // {
+    //   title: "Crushin' Bugs",
+    //   fileName: "Deez"
+    // },
     {
-      title: "Data Science & AI",
-      fileName: "DataScienceImg",
-      skills: [
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Certifications by deeplearning.ai and Stanford Online",
-        "⚡ Experience with 10+ Projects",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-        {
-          skillName: "Pandas",
-          fontAwesomeClassname: "simple-icons:pandas",
-          style: {
-            backgroundColor: "transparent",
-            color: "#6E6E6E",
-          },
-        },
-      ],
-    },
-    {
-      title: "Cloud Infra-Architecture",
+      title: "Cloud Hosting",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Experience hosting and managing websites",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Experience with Continuous Integration",
+        "☁️ Real-World experience deploying and managing services on many different popular platforms",
+        "☁️ Using cloud based services and automation to meet needs and facilitate overhead",
+        "☁️ Customizing Tech stack and flow to integrate with any given Cloud"
       ],
       softwareSkills: [
         {
@@ -306,6 +240,7 @@ const skills = {
             color: "#1488C6",
           },
         },
+      
       ],
     },
   ],
@@ -314,15 +249,15 @@ const skills = {
 const degrees = {
   degrees: [
     {
-      title: "SAL Engineering and Technical Institute",
-      subtitle: "B.Tech. in Computer Engineering",
+      title: "Columbia Engineering",
+      subtitle: "Executive Education in Engineering",
       logo_path: "sal.png",
-      alt_name: "SETI",
-      duration: "2017 - Present",
+      alt_name: "CU",
+      duration: "2017 - 2019",
       descriptions: [
-        "⚡ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚡ I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
-        "⚡ I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
+        "🌀 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
+        "🌀 I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
+        "🌀 I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
       ],
       website_link: "https://www.sal.edu.in/",
     },
@@ -447,10 +382,10 @@ const certifications = {
 
 // Experience Page
 const experience = {
-  title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  title: "Code",
+  subtitle: "Scripts, Apps, Snippets and Functions",
   description:
-    "I've completed two internships. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "Hobbyist and production code for everything from processing information, automating content creation or simplifying data to 3D Printing",
   header_image_path: "experience.svg",
   sections: [
     {

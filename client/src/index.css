@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bad+Script&family=Bungee&family=Gruppo&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap');
+h1.greeting-text {
+  font-family: 'Gruppo', cursive;               
+}
 
 @font-face {
   font-family: "Agustina Regular";

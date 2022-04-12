@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch, HashRouter } from "react-router-dom";
+import Preloader from "../components/Pre";
 import Home from "../pages/home/HomeComponent";
 import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
@@ -9,6 +10,7 @@ import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 
 export default function Main(propss) {
+  
   if (settings.isSplash) {
     return (
       <div>
@@ -46,7 +48,7 @@ export default function Main(propss) {
                 />
               )}
             />
-            <Route
+            {/* <Route
               path="/education"
               render={(props) => (
                 <Education
@@ -55,7 +57,7 @@ export default function Main(propss) {
                   setTheme={propss.setTheme}
                 />
               )}
-            />
+            /> */}
             <Route
               path="/contact"
               render={(props) => (
@@ -127,7 +129,7 @@ export default function Main(propss) {
                 />
               )}
             />
-            <Route
+            {/* <Route
               path="/education"
               render={(props) => (
                 <Education
@@ -136,8 +138,8 @@ export default function Main(propss) {
                   setTheme={propss.setTheme}
                 />
               )}
-            />
-            <Route
+            /> */}
+            {/* <Route
               path="/contact"
               render={(props) => (
                 <Contact
@@ -146,7 +148,7 @@ export default function Main(propss) {
                   setTheme={propss.setTheme}
                 />
               )}
-            />
+            /> */}
             <Route
               path="/projects"
               render={(props) => (
