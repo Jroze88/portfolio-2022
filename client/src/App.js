@@ -28,7 +28,7 @@ function App() {
         <div>
           {useCursor ? (
             <CursorProvider
-              color={themes[theme].secondaryText}
+              color={themes[theme].cursor}
               ringSize={25}
               transitionTime={75}
             >

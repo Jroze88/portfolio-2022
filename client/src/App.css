@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+
+.greeting-text {
+  font-family: 'Seaweed Script', cursive;
+}
+
 .App-logo {
   height: 40vmin;
 }

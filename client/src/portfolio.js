@@ -11,11 +11,11 @@ const settings = {
 const greeting = {
   title: "Hello.",
   title2: "JRoze",
-  logo_name: "(JanoRoze)",
+  logo_name: "{Full Stack // Mobile Apps}",
   nickname: "JRoze88 / Jroze",
   full_name: "Jano Roze",
   subTitle:
-    "Full Stack Developer, React App Deployment, Servers, Storage, Solutions.",
+    "Full Stack Developer, React-Native App Deployment, Servers, Storage, Solutions.",
   resumeLink:
     "https://drive.google.com",
   mail: "mailto:JR@gmail.com",
