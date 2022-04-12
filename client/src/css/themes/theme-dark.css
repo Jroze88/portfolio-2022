@@ -1,0 +1,110 @@
+   @import '../dark-slider.css';
+
+   [data-theme="dark"] .slider-tab {
+      background-color: #8C8C8C;
+   }
+
+ [data-theme="dark"]   .title-styles {
+      color: white;
+   }
+
+ [data-theme="dark"]   .header-icon {
+      color: #3C342C;
+      opacity: 0.8;
+   }
+
+ [data-theme="dark"]   .slider-image {
+      border: 5px solid #8C8C8C;
+   }
+
+ [data-theme="dark"]   .language {
+      background-color: #494949;
+   }
+
+ [data-theme="dark"]   .link-href {
+      color: white;
+   }
+
+ [data-theme="dark"]   .project-date {
+      background-color: #918e97;
+      color: white;
+   }
+
+   header {
+      background-color: #494949;
+ 
+   }
+
+   header > h1 {
+      color: white;
+   }
+
+   #about {
+      background-color: #7f7f7f;
+   }
+   #about > h1 span {
+         color: white;
+      }
+      #about >   .polaroid span {
+         background:  #6d6d6d;
+      }
+
+      #about > .card {
+         background: #6d6d6d;
+         color: white;
+      }
+   
+
+   #portfolio {
+      background: #5b5b5b;
+
+   }
+
+   #portfolio > .section-title {
+      color: white !important;
+   }
+   #portfolio > .foto div {
+      background: #6d6d6d;
+   }
+   #portfolio > .project-title-settings {
+      color: white;
+   }
+
+   #resume {
+      filter: brightness(80%);
+      background: #5b5b5b;
+   }
+   #resume >  .section-title {
+         color: white !important;
+      }
+
+      #resume >  .experience-badge {
+         background: #919191 !important;
+         color: white;
+      }
+
+      #resume > .main-badge {
+         background: #919191 !important;
+      }
+
+      .vertical-timeline-element-date {
+         color: white;
+      }
+
+      .vertical-timeline-element-icon {
+         background: #919191 !important;
+      }
+      @media only screen and (max-width: 1169px) { 
+         .vertical-timeline-element-date {
+            color: black;
+         }
+      }
+ 
+ [data-theme="dark"]   .modal-inside .modal-content {
+      background: #5b5b5b;
+      color: white;
+   }
+
+ [data-theme="dark"]   .close-icon {
+      color: white;
+   }

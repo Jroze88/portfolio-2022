@@ -1,13 +1,18 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import {createRoot} from 'react-dom/client';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {ParallaxProvider} from 'react-scroll-parallax'
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<ParallaxProvider><App /></ParallaxProvider>);
+/* GLOBAL VARIABLES */
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+window.$primaryLanguage = 'en';
+window.$secondaryLanguage = 'pl';
+window.$primaryLanguageIconId = 'primary-lang-icon';
+window.$secondaryLanguageIconId = 'secondary-lang-icon';
+
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
+
+serviceWorker.register();
