@@ -1,18 +1,28 @@
-import React from 'react';
-import {createRoot} from 'react-dom/client';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BaseProvider, LightTheme } from "baseui";
+import { Provider as StyletronProvider } from "styletron-react";
+import { Client as Styletron } from "styletron-engine-atomic";
 
-/* GLOBAL VARIABLES */
 
-window.$primaryLanguage = 'en';
-window.$secondaryLanguage = 'pl';
-window.$primaryLanguageIconId = 'primary-lang-icon';
-window.$secondaryLanguageIconId = 'secondary-lang-icon';
+import "./index.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import "./assests/font-awesome/css/all.css";
 
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
+const engine = new Styletron();
 
-serviceWorker.register();
+ReactDOM.render(
+	<StyletronProvider value={engine}>
+		<BaseProvider theme={LightTheme}>
+				<App />
+	</BaseProvider>
+	</StyletronProvider>,
+	document.getElementById("root")
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();

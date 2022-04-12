@@ -1,35 +1,44 @@
 {
-  "name": "client",
-  "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@restart/ui": "^1.2.0",
-    "axios": "^0.26.1",
-    "react": "^18.0.0",
-    "react-app": "^1.1.2",
-    "react-awesome-slider": "^4.1.0",
-    "react-bootstrap": "^2.2.3",
-    "react-dev-utils": "12.0.0",
-    "react-dom": "^18.0.0",
-    "react-easy-emoji": "^1.6.1",
-    "react-helmet": "^6.1.0",
-    "react-redux": "^7.2.8",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "^2.1.3",
-    "react-scroll-parallax": "^3.0.6",
-    "react-switch": "^6.0.0",
-    "react-transition-group": "^4.4.2",
-    "react-typical": "^0.1.3",
-    "react-vertical-timeline-component": "^3.5.2",
-    "reactstrap": "^9.0.1",
-    "redux": "^4.1.2",
-    "redux-thunk": "^2.4.1"
-  },
+  "name": "jroze-src",
+  "homepage": "http://jano.tech",
+  "version": "1.2.0",
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "baseui": "^9.109.0",
+    "bootstrap": "^4.6.0",
+    "fs": "0.0.1-security",
+    "gh-pages": "^3.1.0",
+    "glamor": "^2.20.40",
+    "node-fetch": "^2.6.1",
+    "prettier-package-json": "^2.1.3",
+    "react": "^16.8.0",
+    "react-bootstrap": "^1.4.3",
+    "react-cursor-custom": "^1.2.4",
+    "react-dom": "^16.8.0",
+    "react-ga": "^3.3.0",
+    "react-icons": "^4.2.0",
+    "react-is": "^17.0.1",
+    "react-reveal": "^1.2.2",
+    "react-rounded-image": "^2.0.11",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "styled-components": "^5.2.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
+  },
+  "devDependencies": {
+    "@iconify/icons-logos": "^3.2.1",
+    "@iconify/react": "3.2.1",
+    "husky": "7.0.4",
+    "lint-staged": "^10.5.4",
+    "prettier": "2.2.1"
   },
   "browserslist": {
     "production": [
@@ -43,11 +52,16 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "@iconify/icons-logos": "^1.0.12",
-    "@iconify/react": "^1.1.3",
-    "@types/react": "^18.0.1",
-    "@types/react-dom": "^18.0.0",
-    "sass": "^1.50.0"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.json": "prettier-package-json --write",
+    "*.{js,css,md}": "prettier --write"
   }
 }
