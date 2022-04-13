@@ -112,15 +112,9 @@ function Header(props) {
               </NavLink>
             </li> */}
             <li>
-              <NavLink
-                className="cr"
-                to="https://drive.google.com/file/d/1XNgCwuyBHzP3EePR0qSNbrlCxABb27Wl/view?usp=sharing"
-                tag={Link}
-                activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
-              >
+            <Link to={{ pathname: "https://drive.google.com/file/d/1XNgCwuyBHzP3EePR0qSNbrlCxABb27Wl/view?usp=sharing" }} target="_blank" >
                 Contact and Resume
-              </NavLink>
+              </Link>
             </li>
             <button {...styles} onClick={changeTheme}>
               {icon}
