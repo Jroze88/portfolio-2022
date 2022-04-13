@@ -11,12 +11,6 @@ function Home(props) {
 
   const [renderTime, setRenderTime] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setRenderTime(true)
-    }, 7000);
-  }, []);
-  
 
 
   return (

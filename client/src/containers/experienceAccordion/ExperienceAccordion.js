@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
@@ -9,6 +9,7 @@ import { projectsHeader, projects, socialMediaLinks } from "../../portfolio.js";
 
 function ExperienceAccordion(props) {
   const theme = props.theme;
+  const [renderIT, setrenderIT] = useState(false)
 
   return (
     <div className="experience-accord">
@@ -43,9 +44,12 @@ function ExperienceAccordion(props) {
                      </Panel>
                  <Panel
                 className="accord-panel3"
-                title={"Cases"}
-                key={"title2"}
+                title={"Interactive Workflow"}
+                key={"title323"}
+                onChange={() => setrenderIT(true)}
               >
+
+             {renderIT &&  <div className='dangerous-iframe' dangerouslySetInnerHTML={{ __html: "<iframe style={width: 600px; height: 600px; background-color: grey;} src='https://visual-argo-workflows.vercel.app/' />"}} />}
                 
                 </Panel>
         </Accordion>
@@ -53,5 +57,6 @@ function ExperienceAccordion(props) {
     </div>
   );
 }
+
 
 export default ExperienceAccordion;

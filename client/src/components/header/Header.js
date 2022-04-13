@@ -114,7 +114,7 @@ function Header(props) {
             <li>
               <NavLink
                 className="cr"
-                to="/contact"
+                to="https://drive.google.com/file/d/1XNgCwuyBHzP3EePR0qSNbrlCxABb27Wl/view?usp=sharing"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}

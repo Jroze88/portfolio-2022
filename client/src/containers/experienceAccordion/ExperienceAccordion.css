@@ -24,3 +24,14 @@
     margin: 20px;
   }
 }
+
+.dangerous-iframe {
+  width: 1200px;
+  height:600px;
+}
+
+.dangerous-iframe > iframe {
+  width: 1200px;
+  height:600px;
+  background-color:rgb(211, 210, 210);
+}
