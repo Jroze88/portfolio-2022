@@ -46,16 +46,33 @@ function ExperienceAccordion(props) {
                 className="accord-panel3"
                 title={"Interactive Workflow"}
                 key={"title323"}
-                onChange={() => setrenderIT(true)}
+                onChange={({ expanded }) => setrenderIT(!renderIT)}
               >
 
-             {renderIT &&  <div className='dangerous-iframe' dangerouslySetInnerHTML={{ __html: "<iframe style={width: 600px; height: 600px; background-color: grey;} src='https://visual-argo-workflows.vercel.app/' />"}} />}
+             {renderIT ?  <DangerousIframe/> : null}
+             
                 
+                </Panel>
+                <Panel
+                className="accord-panel4"
+                title={"Case Studies"}
+                key={"title3213"}
+              >
+
                 </Panel>
         </Accordion>
       </ThemeProvider>
     </div>
   );
+}
+
+function DangerousIframe(props) {
+  
+
+  return (
+    <div className='dangerous-iframe' dangerouslySetInnerHTML={{ __html: "<iframe style={width: 600px; height: 600px; background-color: grey;} src='https://visual-argo-workflows.vercel.app/' />"}} />
+  )
+
 }
 
 

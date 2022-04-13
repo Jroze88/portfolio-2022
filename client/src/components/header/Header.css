@@ -230,3 +230,13 @@
     font-size: 12px;
   }
 }
+
+.a-wrapper {
+  z-index: 5!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.notouch {
+  pointer-events: none;
+}

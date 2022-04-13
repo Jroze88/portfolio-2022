@@ -6,6 +6,7 @@ import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
+import myPDF from './jano-roze-resume_PUBLIC.pdf'
 
 function Header(props) {
   const theme = props.theme;
@@ -111,18 +112,23 @@ function Header(props) {
                 Work
               </NavLink>
             </li> */}
+             
             <li>
+            <a className="a-wrapper" href={myPDF} download="jano-roze-resume-public.pdf">
               <NavLink
-                className="cr"
-                to={{ pathname: "https://drive.google.com/file/d/1XNgCwuyBHzP3EePR0qSNbrlCxABb27Wl/view?usp=sharing" }}
+                className="cr notouch"
+                to={''}
+                target="_blank"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
                 Contact and Resume
               </NavLink>
+              </a>
             </li>
-            <button {...styles} onClick={changeTheme}>
+           
+                        <button {...styles} onClick={changeTheme}>
               {icon}
             </button>
           </ul>

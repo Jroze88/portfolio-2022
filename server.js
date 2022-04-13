@@ -20,12 +20,8 @@ const VideoGrant = AccessToken.VideoGrant || null;
 // const users = require("./routes/api/users");
 
 // Define middleware here
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-
-const mm = mongoose.connect("mongodb+srv://BR4yUsXH8i9nqbN:nqBydPoMcLeNPZoR@cluster0.efnh6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser : true});
-
 
 
 
@@ -39,6 +35,7 @@ if(process.env.NODE_ENV === "development") { // Configuration for development en
 
 } else if(process.env.NODE_ENV === "production") { // Configuration for production environment
   app.use(express.static(path.join(__dirname, "client/build")));
+
 }
 
 // Send every request to the React app

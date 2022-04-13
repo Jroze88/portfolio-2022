@@ -5,7 +5,13 @@ h1.greeting-text {
 }
 
 
-
+@font-face {
+  font-family: "Bacalisties";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bacalisties"),
+    url("./assests/fonts/Bacalisties-2OnXo.ttf") format("woff");
+}
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
