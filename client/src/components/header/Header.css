@@ -25,8 +25,14 @@
 .header li a {
   display: block;
   padding: 10px 20px;
-  /* color: black; */
+  color: black;
   text-decoration: none;
+  background-color: #764848;
+}
+
+.portfolio-repo-btn-div > button {
+  background-color: #764848;
+  display: none;
 }
 
 .header .logo {

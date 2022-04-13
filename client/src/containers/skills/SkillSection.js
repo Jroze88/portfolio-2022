@@ -20,7 +20,7 @@ function GetSkillSvg(props) {
     src="https://assets9.lottiefiles.com/packages/lf20_1bdm0t0m.json"
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-  </Player>;
+  </Player>
   else if (props.fileName === "CloudInfraImg")
     return <Player
     autoplay
@@ -28,7 +28,7 @@ function GetSkillSvg(props) {
     src="https://assets10.lottiefiles.com/private_files/lf30_pvi8w5ye.json"
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-  </Player>;;
+  </Player>
   // return <DesignImg theme={props.theme} />;
 }
 
@@ -108,6 +108,7 @@ function SkillSection(props) {
           );
         }
       })}
+      
     </div>
   );
 }

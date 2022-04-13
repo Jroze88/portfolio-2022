@@ -6,6 +6,8 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import lottieRobo from './robo.json'
 
 function Experience(props) {
   const theme = props.theme;
@@ -17,7 +19,14 @@ function Experience(props) {
         <Fade bottom duration={2000} distance="40px">
           <div className="experience-heading-div">
             <div className="experience-heading-img-div">
-              <ExperienceImg theme={theme} />
+               <Player
+    autoplay
+    loop
+    src={lottieRobo}
+    style={{maxWidth: '480px'}}
+  >
+    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+  </Player>
             </div>
             <div className="experience-heading-text-div">
               <h1
@@ -43,7 +52,7 @@ function Experience(props) {
         </Fade>
       </div>
       <ExperienceAccordion sections={experience["sections"]} theme={theme} />
-      <Footer theme={props.theme} onToggle={props.onToggle} />
+      {/* <Footer theme={props.theme} onToggle={props.onToggle} /> */}
     </div>
   );
 }
