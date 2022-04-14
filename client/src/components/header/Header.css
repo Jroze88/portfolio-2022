@@ -159,6 +159,11 @@
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
   color: #ffffff;
+  background-color: #f0c5a2!important;
+}
+
+.homei {
+  background-color: #f0c5a2!important;
 }
 
 .xp:hover {
@@ -235,8 +240,12 @@
   z-index: 5!important;
   padding: 0!important;
   margin: 0!important;
+  background-color: #51cabe!important;
+  border-radius: 5px;
 }
 
 .notouch {
   pointer-events: none;
+
+  background-color: #51cabe!important;
 }

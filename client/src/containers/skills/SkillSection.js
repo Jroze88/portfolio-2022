@@ -13,18 +13,13 @@ function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
-    return <Player
-    autoplay
-    speed={0.9}
-    loop
-    src="https://assets9.lottiefiles.com/packages/lf20_1bdm0t0m.json"
-  >
-    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-  </Player>
+    return 
   else if (props.fileName === "CloudInfraImg")
     return <Player
     autoplay
     loop
+
+    key={'fullstack2'}
     src="https://assets10.lottiefiles.com/private_files/lf30_pvi8w5ye.json"
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
@@ -39,10 +34,20 @@ function SkillSection(props) {
       {skills.data.map((skill, index) => {
         if (index % 2 === 0) {
           return (
-            <div className="skills-main-div">
+            <div
+            key={`${index}-keys3`}
+            className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
+                <Player
+    autoplay
+    speed={0.9}
+    loop
+    key={'fullstack1'}
+    src="https://assets9.lottiefiles.com/packages/lf20_1bdm0t0m.json"
+  >
+    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
+  </Player>
                 </div>
               </Fade>
 
@@ -57,9 +62,10 @@ function SkillSection(props) {
                 </Fade>
                 <Fade right duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
+                    {skill.skills.map((skillSentence, index) => {
                       return (
                         <p
+                        key={`${index}-keys1`}
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
                         >
@@ -74,7 +80,7 @@ function SkillSection(props) {
           );
         } else {
           return (
-            <div className="skills-main-div">
+            <div className="skills-main-div" key={'69'}>
               <div className="skills-text-div">
                 <Fade left duration={1000}>
                   <h1 className="skills-heading" style={{ color: theme.text }}>
@@ -86,9 +92,10 @@ function SkillSection(props) {
                 </Fade>
                 <Fade left duration={2000}>
                   <div>
-                    {skill.skills.map((skillSentence) => {
+                    {skill.skills.map((skillSentence, index) => {
                       return (
                         <p
+                          key={`${index}-keys`}
                           className="subTitle skills-text"
                           style={{ color: theme.secondaryText }}
                         >

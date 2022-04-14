@@ -9,7 +9,7 @@ import { render } from 'react-dom';
 
 function Home(props) {
 
-  const [renderTime, setRenderTime] = useState(false);
+  // const [renderTime, setRenderTime] = useState(false);
 
 
 
@@ -17,15 +17,15 @@ function Home(props) {
     <div>
       <Header theme={props.theme} setTheme={props.setTheme} />
       <Greeting theme={props.theme} />
- {renderTime && <Player
+ <Player
     autoplay
     loop={true}
     speed={0.8}
     src={lottieArrow}
-    style ={{ position: "absolute", bottom: 0, right: 0, height: '10vh', width: '10vw'}}
+    style ={{ position: "absolute", bottom: 0, right: 0, height: '10vh', width: '10vw', padding: '1rem'}}
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-  </Player>}
+  </Player>
       <Skills theme={props.theme} />
       {/* <Footer theme={props.theme} /> */}
     </div>
