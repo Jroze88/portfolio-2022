@@ -429,9 +429,9 @@ const projects = {
   data: [
     {
       id: "50",
-      name: "Automated Content Creation for Gaming Site Community",
+      name: "Automated Content",
       url: "https://github.com/Jroze88/wordpress-node-server-ottg",
-      description: "Wordpress site with Node server that periodically checks and automatically scrapes websites/youtube videos of all content creators in the community, automates article/thumbnail/tagging and post creation to the main page",
+      description: "Node.js server that would periodically gathers community content creators' posts/videos/articles and automate the assembly and posting of new articles to the Wordpress homepage",
       languages: [
         {
           name: "NodeJS",

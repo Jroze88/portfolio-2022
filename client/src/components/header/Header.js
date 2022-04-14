@@ -50,7 +50,7 @@ function Header(props) {
   }
 
   const icon =
-    props.theme.name === "dark" ? (
+    props.theme.name === "light" ? (
       <HiMoon
         strokeWidth={1}
         size={20}

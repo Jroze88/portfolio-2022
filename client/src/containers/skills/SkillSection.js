@@ -68,7 +68,7 @@ function SkillSection(props) {
                         <p
                         key={`${index}-keys1`}
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{ color: theme.accentColor }}
                         >
                           {skillSentence}
                         </p>
@@ -84,7 +84,7 @@ function SkillSection(props) {
             <div style={{backgroundColor: theme.body}} className="skills-main-div" key={'69'}>
               <div className="skills-text-div">
                 <Fade left duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.body }}>
+                  <h1 className="skills-heading" style={{ color: theme.secondaryText }}>
                     {skill.title}
                   </h1>
                 </Fade>
@@ -98,7 +98,7 @@ function SkillSection(props) {
                         <p
                           key={`${index}-keys`}
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{ color: theme.text }}
                         >
                           {skillSentence}
                         </p>

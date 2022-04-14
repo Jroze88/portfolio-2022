@@ -8,7 +8,7 @@
 }
 
 .skills-header {
-  font-size: 60px;
+  font-size: 6rem!important;
   line-height: 1.1;
   font-family: "JosefinSans";
   text-align: center;
@@ -33,7 +33,7 @@
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .skills-heading {
