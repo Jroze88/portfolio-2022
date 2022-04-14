@@ -38,12 +38,11 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "🌀 Helping build and launch your big idea or tech solution",
-        "🌀 Implementing quality, scalable website or mobile app UI/UX Design",
-        "🌀 Creating application Back-End functionality web servers",
-        "🌀 Creating mobile apps for use on PC, Android and Apple devices",        
-        "🌀 Applying efficient design principles to save time and money on upkeep and development",
-        "🌀 Using a wide range of industry leading technologies",
+        "🌀 Use a wide range of industry leading web technologies",
+        "🌀 Create and launch Mobile Apps, Solo or as part of a team",
+        "🌀 Implement quality, scalable website or mobile app code",
+        "🌀 Create application Back-End functionality for web servers",      
+        "🌀 Find ways to apply automation and maximize resource utilization"
       ],
       softwareSkills: [
         {
@@ -93,13 +92,6 @@ const skills = {
           fontAwesomeClassname: "fa-linux",
           style: {
             color: "#29B0EE",
-          },
-        },
-        {
-          skillName: "Visual Basic",
-          fontAwesomeClassname: "simple-icons:dot-net",
-          style: {
-            color: "#029FCE",
           },
         },
         {

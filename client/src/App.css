@@ -11,6 +11,11 @@
   height: 40vmin;
 }
 
+.logo-name {
+  font-family: 'Monserrat'!important;
+  color: rgb(138, 125, 125)!important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

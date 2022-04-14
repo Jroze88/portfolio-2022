@@ -19,6 +19,7 @@ function Home(props) {
       <Greeting theme={props.theme} />
  <Player
     autoplay
+    className={'lottiearrow'}
     loop={true}
     speed={0.8}
     src={lottieArrow}

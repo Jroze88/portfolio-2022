@@ -22,28 +22,28 @@
   color: #645beb;
 }
 
-div#lottie {
+/* div#lottie {
   border-radius: 54px;
-  background: #383b40;
-  box-shadow: inset 10px 10px 13px #26282b,
-              inset -10px -10px 13px #4a4e55;
-  background-color: #383b40!important;
-}
+  background: #96dcdb;
+  box-shadow: inset 11px 11px 22px #80bbba,
+              inset -11px -11px 22px #adfdfc;
+  background-color: #96dcdb!important;
+} */
 
-.skills-text-div {
+/* .skills-text-div {
 border-radius: 54px;
-background: linear-gradient(145deg, #32353a, #3c3f44);
-box-shadow:  7px 7px 14px #26282b,
-             -7px -7px 14px #4a4e55;
+background: #75909c;
+box-shadow:  5px 5px 8px #669695,
+             -5px -5px 8px #c6ffff;
              padding: 3rem;
              margin: 2rem;
 }
 
 .greeting-text-div {
   border-radius: 54px;
-background: linear-gradient(145deg, #32353a, #3c3f44);
-box-shadow:  7px 7px 14px #26282b,
-             -7px -7px 14px #4a4e55;
+  background: #75909c;
+  box-shadow:  5px 5px 8px #669695,
+               -5px -5px 8px #c6ffff;
              padding: 3rem;
              margin: 2rem;
-}
+} */

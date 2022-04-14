@@ -6,13 +6,13 @@
 }
 
 .card-title {
-  font-family: "Google Sans Medium";
+  font-family: "Monserrat";
   font-size: 23px;
   margin-left: 10px;
 }
 
 .card-subtitle {
-  font-family: "Google Sans Medium";
+  font-family: "Monserrat";
   font-size: 18px;
   margin-top: 7px;
   margin-bottom: 5px;
@@ -55,7 +55,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.lottiearrow {
+  display: none;
+}
+
 @media (max-width: 768px) {
+
+  .lottiearrow {
+    display: block;
+  }
   .degree-card {
     flex-direction: column;
   }

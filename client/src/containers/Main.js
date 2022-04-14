@@ -101,32 +101,38 @@ export default function Main(propss) {
               path="/"
               exact
               render={(props) => (
+                <div className="mainWrapper1">
                 <Home
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
+                </div>
               )}
             />
             <Route
               path="/home"
               render={(props) => (
+                <div className="mainWrapper2">
                 <Home
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
-                />
+                /> </div>
               )}
             />
+           
             <Route
               path="/experience"
               exact
               render={(props) => (
+                <div className="mainWrapper3">
                 <Experience
                   {...props}
                   theme={propss.theme}
                   setTheme={propss.setTheme}
                 />
+                </div>
               )}
             />
             {/* <Route

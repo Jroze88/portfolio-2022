@@ -46,6 +46,7 @@ function Header(props) {
       localStorage.setItem("theme", "light");
       setCurrTheme("light");
     }
+    
   }
 
   const icon =
@@ -82,10 +83,10 @@ function Header(props) {
             <li>
               <NavLink
                 className="homei"
-                to="/home"
+                to="/home"navColor
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 5, color: theme.navColor }}
               >
                 Home
               </NavLink>
@@ -96,7 +97,7 @@ function Header(props) {
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.navColor}}
               >
                 Code
               </NavLink>
@@ -121,7 +122,7 @@ function Header(props) {
                 target="_blank"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.text }}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.accentColor }}
               >
                 Contact and Resume
               </NavLink>

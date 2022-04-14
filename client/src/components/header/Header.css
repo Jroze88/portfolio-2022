@@ -65,6 +65,10 @@
   transition: max-height 0.2s ease-out;
 }
 
+.header > text {
+  color: #031b33!important
+}
+
 /* menu icon */
 
 .header .menu-icon {
@@ -135,6 +139,9 @@
   margin: 2px 5px 20px 10px;
   transition: all 0.2s ease-in-out;
   color: #ffffff;
+  background-color: #efc9a4!important;
+  box-shadow: 0 2px 2px #c2b3b5;
+
 }
 
 .homei:hover {
@@ -159,12 +166,11 @@
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
   color: #ffffff;
-  background-color: #f0c5a2!important;
+  background-color: #efc9a4!important;
+  box-shadow: 0 2px 2px #c2b3b5;
 }
 
-.homei {
-  background-color: #f0c5a2!important;
-}
+
 
 .xp:hover {
   box-shadow: 0 2px 10px #f7b908;
@@ -176,6 +182,7 @@
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
   color: #ffffff;
+  box-shadow: 0 2px 2px #c2b3b5;
 }
 
 .projects:hover {
@@ -187,7 +194,8 @@
 .cr {
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
-  color: #ffffff;
+  color: #000000!important;
+  background-color: #ad2a52!important;
 }
 
 .cr:hover {
@@ -240,7 +248,7 @@
   z-index: 5!important;
   padding: 0!important;
   margin: 0!important;
-  background-color: #51cabe!important;
+  background-color: transparent!important;
   border-radius: 5px;
 }
 
@@ -252,6 +260,4 @@
 
 .notouch {
   pointer-events: none;
-
-  background-color: #51cabe!important;
 }
