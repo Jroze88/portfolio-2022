@@ -57,7 +57,7 @@ function DegreeCard(props) {
     width: "200px",
     height: "50px",
     fontWeight: "bold",
-    fontFamily: "Google Sans Regular",
+    fontFamily: "Montserrat",
     fontSize: "17px",
     transition: "all 0.2s ease-in-out",
     cursor: "pointer",

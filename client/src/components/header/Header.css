@@ -45,7 +45,7 @@
 }
 
 .header .logo-name {
-  font-family: "Google Sans Regular";
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding: 0 10px;
   letter-spacing: 3px;
@@ -55,7 +55,7 @@
 /* menu */
 
 .menu {
-  font-family: "Google Sans Regular";
+  font-family: "Montserrat", sans-serif;
 }
 
 .header .menu {
@@ -242,6 +242,12 @@
   margin: 0!important;
   background-color: #51cabe!important;
   border-radius: 5px;
+}
+
+.a-wrapper:hover {
+  box-shadow: 0 1px 10px #47a148;
+  background-color: #47a148;
+  color: #ffffff !important;
 }
 
 .notouch {

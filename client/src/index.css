@@ -50,8 +50,8 @@ h1.greeting-text {
     url("./assests/fonts/GoogleSans-MediumItalic.ttf") format("woff");
 }
 @font-face {
-  font-family: "Google Sans Regular";
-  src: local("Google Sans Regular"),
+  font-family: "Montserrat", sans-serif;
+  src: local("Montserrat", sans-serif),
     url("./assests/fonts/GoogleSans-Regular.ttf") format("woff");
 }
 code {
