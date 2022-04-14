@@ -35,6 +35,7 @@ function SkillSection(props) {
         if (index % 2 === 0) {
           return (
             <div
+            style={{backgroundColor: theme.cardColor}}
             key={`${index}-keys3`}
             className="skills-main-div">
               <Fade left duration={2000}>
@@ -53,8 +54,8 @@ function SkillSection(props) {
 
               <div className="skills-text-div">
                 <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
+                  <h1 className="skills-heading" style={{ color: theme.body }}>
+                   Full Stack Developer
                   </h1>
                 </Fade>
                 <Fade right duration={1500}>
@@ -80,14 +81,14 @@ function SkillSection(props) {
           );
         } else {
           return (
-            <div className="skills-main-div" key={'69'}>
+            <div style={{backgroundColor: theme.body}} className="skills-main-div" key={'69'}>
               <div className="skills-text-div">
                 <Fade left duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1 className="skills-heading" style={{ color: theme.body }}>
                     {skill.title}
                   </h1>
                 </Fade>
-                <Fade left duration={1500}>
+                <Fade  left duration={1500}>
                   <SoftwareSkill logos={skill.softwareSkills} />
                 </Fade>
                 <Fade left duration={2000}>

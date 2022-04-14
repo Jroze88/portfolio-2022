@@ -1,5 +1,10 @@
 .skills-main-div {
   display: flex;
+  overflow-x: hidden;
+}
+
+.skills-main-div:nth-child(2) {
+  width:100vw;
 }
 
 .skills-header {
@@ -14,7 +19,7 @@
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  margin-left: 10vw;
   margin-top: 3%;
   padding-top: 80px;
   font-family: "JosefinSans";

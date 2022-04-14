@@ -63,13 +63,10 @@
 
   
   .greeting-main {
-  min-height: 100vh;
   margin-top: 10vh;
 }
 
-.skills-main-div {
-  min-height: 100vh
-}
+
 
 
 @media (max-width: 768px) {

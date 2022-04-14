@@ -68,12 +68,12 @@ function Header(props) {
     <Fade top duration={1000} distance="20px">
       <div>
         <header className="header">
-          <NavLink to={link} tag={Link} className="logo">
-            <span style={{ color: theme.text }}></span>
+          <NavLink  to={link} tag={Link} className="logo">
+            <span style={{ color: theme.text}}></span>
             <span className="logo-name" style={{ color: theme.text }}>
               {greeting.logo_name}
             </span>
-            <span style={{ color: theme.text }}></span>
+            <span style={{ color: theme.text }}>Web Development</span>
           </NavLink>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
@@ -86,7 +86,7 @@ function Header(props) {
                 to="/home"navColor
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.navColor }}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.secondaryText}}
               >
                 Home
               </NavLink>
@@ -97,7 +97,7 @@ function Header(props) {
                 to="/experience"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.navColor}}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.secondaryText}}
               >
                 Code
               </NavLink>
