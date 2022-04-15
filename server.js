@@ -1,3 +1,4 @@
+const http = require("http");
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -10,6 +11,7 @@ const cheerio = require('cheerio')
 const nodemailer = require('nodemailer');
 const E0 = process.env.E0 || null
 const E1 =  process.env.E1 || null
+const server = require('http').createServer(app);
 // const faker = require("faker");
 const AccessToken = require("twilio").jwt.AccessToken || null;
 const VideoGrant = AccessToken.VideoGrant || null;
@@ -22,6 +24,11 @@ const VideoGrant = AccessToken.VideoGrant || null;
 // Define middleware here
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(function(req, res, next) {
+  var reqType = req.headers["x-forwarded-proto"];
+  reqType == 'http' ? next() : res.redirect("http://" + req.headers.host + req.url);
+});
 
 
 
