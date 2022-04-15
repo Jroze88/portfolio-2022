@@ -11,7 +11,6 @@ const cheerio = require('cheerio')
 const nodemailer = require('nodemailer');
 const E0 = process.env.E0 || null
 const E1 =  process.env.E1 || null
-const server = require('http').createServer(app);
 // const faker = require("faker");
 const AccessToken = require("twilio").jwt.AccessToken || null;
 const VideoGrant = AccessToken.VideoGrant || null;
@@ -25,10 +24,6 @@ const VideoGrant = AccessToken.VideoGrant || null;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use(function(req, res, next) {
-  var reqType = req.headers["x-forwarded-proto"];
-  reqType == 'http' ? next() : res.redirect("http://" + req.headers.host + req.url);
-});
 
 
 
@@ -40,10 +35,24 @@ if(process.env.NODE_ENV === "development") { // Configuration for development en
   app.use(express.static(path.join(__dirname, "app")));
 
 
-} else if(process.env.NODE_ENV === "production") { // Configuration for production environment
-  app.use(express.static(path.join(__dirname, "client/build")));
+} else  { // Configuration for production environment
+
+  const server = require('http').createServer(app);
+
+
+  app.use(function(req, res, next) {
+
+    var reqType = req.headers["x-forwarded-proto"];
+
+    reqType == 'http' ? next() : reqType == 'https' ? next() : res.redirect("https://" + req.headers.host + req.url);
+
+  });
+
+
 
 }
+
+app.use(express.static(path.join(__dirname, "client/build")));
 
 // Send every request to the React app
 // Define any API routes before this runs
