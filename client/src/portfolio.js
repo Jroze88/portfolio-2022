@@ -381,7 +381,7 @@ const experience = {
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Recent Work",
+      title: "Most Recent Work",
       experiences: [
         {
           title: "App Developer",

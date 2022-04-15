@@ -44,7 +44,7 @@ function ExperienceAccordion(props) {
                      </Panel>
                  <Panel
                 className="accord-panel3"
-                title={"Interactive Workflow"}
+                title={"Case Studies"}
                 key={"title323"}
                 onChange={({ expanded }) => setrenderIT(!renderIT)}
               >
