@@ -11,9 +11,14 @@ const cheerio = require('cheerio')
 const nodemailer = require('nodemailer');
 const E0 = process.env.E0 || null
 const E1 =  process.env.E1 || null
+const express_enforces_ssl = require('express-enforces-ssl');
 // const faker = require("faker");
 const AccessToken = require("twilio").jwt.AccessToken || null;
 const VideoGrant = AccessToken.VideoGrant || null;
+
+app.enable('trust proxy');
+ 
+app.use(express_enforces_ssl());
 
 // const passport = require("passport");
 
@@ -25,6 +30,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 
+const server = require('http').createServer(app);
 
 
 if(process.env.NODE_ENV === "development") { // Configuration for development environment
@@ -36,23 +42,10 @@ if(process.env.NODE_ENV === "development") { // Configuration for development en
 
 
 } else  { // Configuration for production environment
-
-  const server = require('http').createServer(app);
-
-
-  app.use(function(req, res, next) {
-
-    var reqType = req.headers["x-forwarded-proto"];
-
-    reqType == 'http' ? next() : reqType == 'https' ? next() : res.redirect("https://" + req.headers.host + req.url);
-
-  });
-
+  app.use(express.static(path.join(__dirname, "client/build")));
 
 
 }
-
-app.use(express.static(path.join(__dirname, "client/build")));
 
 // Send every request to the React app
 // Define any API routes before this runs
@@ -60,6 +53,6 @@ app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
-app.listen(PORT, function() {
+http.createServer(app).listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);
 });
