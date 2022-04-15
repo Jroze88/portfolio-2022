@@ -388,7 +388,7 @@ const experience = {
           company: "HelloHannahGroup",
           company_url: "https://github.com/Jroze88/React-Native-Personal-Finance",
           logo_path: "beispiel2.gif",
-          duration: "June 2020 - October 2021",
+          duration: "Summer 2020",
           location: "New York, NY",
           description:
             "Solo developer on a team launching a personal finance app with p2p functionality. React-Native client for Apple and Android, AWSBeanstalk + Node server and Storage",
