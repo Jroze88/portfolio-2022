@@ -9,7 +9,7 @@ function ExperienceCard(props) {
       className="experience-card"
       style={{
         border: `1px solid ${experience["color"]}`,
-        backgroundColor: theme.imageDark,
+        backgroundColor: theme.body,
       }}
     >
       <div className="experience-card-logo-div">
@@ -22,7 +22,7 @@ function ExperienceCard(props) {
       <div className="experience-card-body-div">
         <div className="experience-card-header-div">
           <div className="experience-card-heading-left">
-            <h3 className="experience-card-title" style={{ color: theme.text }}>
+            <h3 className="experience-card-title" style={{ color: theme.secondaryText }}>
               {experience["title"]}
             </h3>
             <p

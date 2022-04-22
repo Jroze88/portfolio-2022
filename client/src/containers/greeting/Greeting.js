@@ -80,7 +80,8 @@ export default function Greeting(props) {
 {/* REGULAR LOADING */}
 
           <Player
-    autoplay
+    autoplay={true}
+    loop
     speed={0.5}
     src={lottielaptop}
   >

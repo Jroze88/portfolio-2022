@@ -11,8 +11,6 @@ export default function ProjectCard({ repo, theme }) {
   }
 
   const styles = style({
-    color: "rgb(88, 96, 105)",
-    backgroundColor: "rgb(255, 255, 255)",
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
     cursor: "pointer",
@@ -31,14 +29,14 @@ export default function ProjectCard({ repo, theme }) {
           {...styles}
           key={repo.id}
           onClick={() => openRepoinNewTab(repo.url)}
-          style={{ backgroundColor: theme.projectCard }}
+          style={{ backgroundColor: theme.body }}
         >
           <div className="repo-name-div">
-            <p className="repo-name" style={{ color: theme.accentColor }}>
+            <p className="repo-name" style={{ color: theme.secondaryText }}>
               {repo.name}
             </p>
           </div>
-          <p className="repo-description" style={{ color: '#111111' }}>
+          <p className="repo-description" style={{ color: theme.text }}>
             {repo.description}
           </p>
           <div className="repo-details">

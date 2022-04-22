@@ -14,13 +14,26 @@ function ExperienceAccordion(props) {
   return (
     <div className="experience-accord" >
       <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
-        <Accordion style={{backgroundColor: theme.cardColor}} onChange={({ expanded }) => console.log(expanded)}>
+        <Accordion  onChange={({ expanded }) => console.log(expanded)}
+                        accordion
+                        overrides={{
+                          PanelContainer: {
+                            style: () => ({
+                              outline: `black solid`
+                            })},
+                          Content: {
+                            style: () => ({
+                                backgroundColor: `${theme.cardColor}`
+                            })
+                          }}}
+                          >
           {props.sections.map((section) => {
             return (
               <Panel
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
+
                 
               >
                 {section["experiences"].map((experience) => {

@@ -28,7 +28,7 @@ function Experience(props) {
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
   </Player>
             </div>
-            <div className="experience-heading-text-div">
+            <div className="experience-heading-text-div" >
               <h1
                 className="experience-heading-text"
                 style={{ color: theme.accentColor  }}
