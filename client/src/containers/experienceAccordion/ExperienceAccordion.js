@@ -12,9 +12,9 @@ function ExperienceAccordion(props) {
   const [renderIT, setrenderIT] = useState(false)
 
   return (
-    <div className="experience-accord">
+    <div className="experience-accord" >
       <ThemeProvider theme={theme.name === "light" ? LightTheme : DarkTheme}>
-        <Accordion onChange={({ expanded }) => console.log(expanded)}>
+        <Accordion style={{backgroundColor: theme.cardColor}} onChange={({ expanded }) => console.log(expanded)}>
           {props.sections.map((section) => {
             return (
               <Panel

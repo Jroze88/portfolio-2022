@@ -24,12 +24,11 @@ const greeting = {
 const socialMediaLinks = {
   /* Your Social Media Link */
   github: "https://github.com/JRoze88",
-  linkedin: "https://www.linkedin.com/in/JRoze- -ba8476140/",
-  gmail: "JRoze 99@gmail.com",
+  linkedin: "https://www.linkedin.com/in/JRoze-",
+  gmail: "Jroze.linux@gmail.com",
   gitlab: " ",
-  facebook: " ",
-  twitter: "https://twitter.com/JRoze_55",
-  instagram: "https://www.instagram.com/jroze/",
+  twitter: "https://twitter.com/#",
+  instagram: "https://www.instagram.com/theobservablejanoverse/",
 };
 
 const skills = {
@@ -38,11 +37,11 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "🌀 Use a wide range of industry leading web technologies",
-        "🌀 Create and launch Mobile Apps, Solo or as part of a team",
-        "🌀 Implement quality, scalable website or mobile app code",
-        "🌀 Create application Back-End functionality for web servers",      
-        "🌀 Find ways to apply automation and maximize resource utilization"
+        "⚫Use a wide range of industry leading web technologies",
+        "⚫Create and launch Mobile Apps, Solo or as part of a team",
+        "⚫Implement quality, scalable website or mobile app code",
+        "⚫Create application Back-End functionality for web servers",      
+        "⚫Find ways to apply automation and maximize resource utilization"
       ],
       softwareSkills: [
         {
@@ -178,9 +177,9 @@ const skills = {
       title: "Cloud Hosting",
       fileName: "CloudInfraImg",
       skills: [
-        "☁️ Real-World experience deploying and managing services on many different popular platforms",
-        "☁️ Using cloud based services and automation to meet needs and facilitate overhead",
-        "☁️ Customizing Tech stack and flow to integrate with any given Cloud"
+        "⚫Real-World experience deploying and managing services on many different popular platforms",
+        "⚫Using cloud based services and automation to meet needs and facilitate overhead",
+        "⚫Customizing Tech stack and flow to integrate with any given Cloud"
       ],
       softwareSkills: [
         {
@@ -247,9 +246,9 @@ const degrees = {
       alt_name: "CU",
       duration: "2017 - 2019",
       descriptions: [
-        "🌀 I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "🌀 I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
-        "🌀 I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
+        "⚫I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
+        "⚫I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
+        "⚫I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
       ],
       website_link: "https://www.sal.edu.in/",
     },
@@ -381,14 +380,14 @@ const experience = {
   header_image_path: "experience.svg",
   sections: [
     {
-      title: "Most Recent Work",
+      title: "Recent Work",
       experiences: [
         {
           title: "App Developer",
           company: "HelloHannahGroup",
           company_url: "https://github.com/Jroze88/React-Native-Personal-Finance",
           logo_path: "beispiel2.gif",
-          duration: "Summer 2020",
+          duration: "2020",
           location: "New York, NY",
           description:
             "Solo developer on a team launching a personal finance app with p2p functionality. React-Native client for Apple and Android, AWSBeanstalk + Node server and Storage",

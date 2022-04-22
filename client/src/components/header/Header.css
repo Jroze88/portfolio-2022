@@ -25,7 +25,6 @@
 .header li a {
   display: block;
   padding: 10px 20px;
-  color: black;
   text-decoration: none;
   background-color: #764848;
 }
@@ -64,10 +63,10 @@
   max-height: 0;
   transition: max-height 0.2s ease-out;
 }
-
+/* 
 .header > text {
   color: #031b33!important
-}
+} */
 
 /* menu icon */
 
@@ -192,8 +191,6 @@
 .cr {
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
-  color: #000000!important;
-  background-color: #ad2a52!important;
 }
 
 .cr:hover {
@@ -248,6 +245,9 @@
   margin: 0!important;
   background-color: transparent!important;
   border-radius: 5px;
+  padding:0;
+  margin: 2px 5px 20px;
+  
 }
 
 .a-wrapper:hover {

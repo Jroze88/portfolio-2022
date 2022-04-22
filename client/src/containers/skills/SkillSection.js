@@ -68,7 +68,7 @@ function SkillSection(props) {
                         <p
                         key={`${index}-keys1`}
                           className="subTitle skills-text"
-                          style={{ color: theme.accentColor }}
+                          style={{ color: theme.cardText }}
                         >
                           {skillSentence}
                         </p>
