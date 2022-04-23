@@ -29,19 +29,19 @@
 
 .greeting-text {
   margin-top: 110px;
-  font-size: 80px;
+  font-size: 4rem;
   line-height: 5px;
   font-family: "Bacalisties"!important;
 }
 
 .greeting-nickname {
-  font-size: 50px;
+  font-size: 3rem;
   line-height: 0px;
   font-family: "JosefinSans";
 }
 
 .greeting-text-p {
-  font-size: 40px;
+  font-size: 3rem;
   line-height: 40px;
   margin-right: 40px;
   font-family: "Monserrat";
@@ -64,7 +64,7 @@
   height: 50px;
   font-weight: bold;
   font-family: "JosefinSans";
-  font-size: 17px;
+  font-size: 1rem;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
@@ -72,11 +72,11 @@
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 2rem;
   }
 
   .greeting-text-p {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .greet-main {
@@ -88,16 +88,16 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 0px;
     text-align: center;
   }
   .greeting-nickname {
-    font-size: 25px;
+    font-size: 2rem;
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 16px;
+    font-size: 1rem;
     margin-right: 0px;
     line-height: normal;
     text-align: center;

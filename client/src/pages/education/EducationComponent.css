@@ -30,7 +30,7 @@
 }
 
 .heading-text {
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: 400;
   font-family: "Monserrat";
   line-height: 1.1;
@@ -39,7 +39,7 @@
 }
 
 .heading-sub-text {
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
@@ -56,12 +56,12 @@
 
 @media (max-width: 768px) {
   .heading-text {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 20px;
   }
 
   .heading-sub-text {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .heading-div {

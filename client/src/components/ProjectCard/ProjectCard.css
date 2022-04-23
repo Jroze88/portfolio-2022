@@ -83,7 +83,7 @@
   }
 
   .repo-description {
-    font-size: 14px;
+    font-size: 2rem;
   }
 
   .repo-details {
@@ -91,6 +91,6 @@
   }
 
   .repo-creation-date {
-    font-size: 14px;
+    font-size: 2rem;
   }
 }

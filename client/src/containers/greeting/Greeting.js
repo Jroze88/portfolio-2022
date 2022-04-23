@@ -82,7 +82,7 @@ export default function Greeting(props) {
           <Player
     autoplay={true}
     loop
-    speed={0.5}
+    speed={0.7}
     src={lottielaptop}
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />

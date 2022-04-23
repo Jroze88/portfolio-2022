@@ -376,7 +376,7 @@ const experience = {
   title: "Code",
   subtitle: "Scripts, Apps, Snippets and Functions",
   description:
-    "Hobbyist and production code for everything from processing information, automating content creation or simplifying data to 3D Printing",
+    "Production and Hobby Code for various projects. Data processing, automated content creation to different platforms, 3D printing, etc",
   header_image_path: "experience.svg",
   sections: [
     {

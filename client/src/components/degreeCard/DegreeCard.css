@@ -7,13 +7,13 @@
 
 .card-title {
   font-family: "Monserrat";
-  font-size: 23px;
+  font-size: 2rem;
   margin-left: 10px;
 }
 
 .card-subtitle {
   font-family: "Monserrat";
-  font-size: 18px;
+  font-size: 2rem;
   margin-top: 7px;
   margin-bottom: 5px;
   margin-left: 10px;
@@ -36,7 +36,7 @@
 }
 .duration {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 2rem;
   padding-right: 10px;
   float: right;
 }
@@ -99,10 +99,10 @@
   }
 
   .card-title {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .card-subtitle {
-    font-size: 16px;
+    font-size: 2rem;
   }
 }

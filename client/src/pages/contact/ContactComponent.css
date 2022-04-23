@@ -71,7 +71,7 @@
 }
 
 .contact-heading-text {
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: 400;
   font-family: "Monserrat";
   line-height: 1.1;
@@ -80,7 +80,7 @@
 }
 
 .blog-heading-text {
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: 400;
   font-family: "Monserrat";
   line-height: 1.1;
@@ -89,14 +89,14 @@
 }
 
 .address-heading-text {
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .contact-header-detail-text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   margin-top: 0px;
   margin-left: 20px;
@@ -105,7 +105,7 @@
 }
 
 .blog-header-detail-text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   margin-top: 0px;
   margin-left: 20px;
@@ -162,12 +162,12 @@
 
 @media (max-width: 768px) {
   .contact-heading-text {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 0px;
   }
 
   .blog-heading-text {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 0px;
   }
 
@@ -177,7 +177,7 @@
   }
 
   .address-heading-text {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .blog-heading-div {

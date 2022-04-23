@@ -31,7 +31,7 @@
 }
 
 .projects-heading-text {
-  font-size: 56px;
+  font-size: 4rem;
   font-weight: 400;
   font-family: "Monserrat";
   line-height: 1.1;
@@ -40,14 +40,14 @@
 }
 
 .projects-heading-sub-text {
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .projects-header-detail-text {
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 30px;
   margin-top: 0px;
   margin-left: 20px;
@@ -76,12 +76,12 @@
 
 @media (max-width: 768px) {
   .projects-heading-text {
-    font-size: 30px;
+    font-size: 3rem;
     margin-top: 20px;
   }
 
   .projects-heading-sub-text {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .projects-heading-div {
