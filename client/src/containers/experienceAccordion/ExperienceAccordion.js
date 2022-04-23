@@ -116,7 +116,7 @@ function WordPressProjectCard({  theme }) {
           <p className="repo-description" style={{ color: theme.text }}>
             Apache Wordpress deploy alongside Node.js with Automated Content Creation from across the Web
           </p>
-          <img src={onTheTableGaming} className='wordpress-thumb' />
+          <img alt={'onthetablegaming.com wordpress homepage'} src={onTheTableGaming} className='wordpress-thumb' />
           <div className="repo-details">
           </div>
         </div>

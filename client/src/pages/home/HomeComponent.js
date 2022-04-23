@@ -15,7 +15,7 @@ function Home(props) {
     <div>
       <Header theme={props.theme} setTheme={props.setTheme} />
       <Greeting theme={props.theme} />
- <Player
+ {/* <Player
     autoplay
     className={'lottiearrow'}
     loop={true}
@@ -24,7 +24,7 @@ function Home(props) {
     style ={{ position: "absolute", bottom: 0, right: 0, height: '10vh', width: '10vw', padding: '1rem'}}
   >
     <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-  </Player>
+  </Player> */}
       <Skills theme={props.theme} />
       {/* <Footer theme={props.theme} /> */}
     </div>
