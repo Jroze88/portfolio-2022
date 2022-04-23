@@ -35,3 +35,8 @@
   height:600px;
   background-color:rgb(211, 210, 210);
 }
+
+.wordpress-thumb {
+  width: 450px;
+  height: auto;
+}
