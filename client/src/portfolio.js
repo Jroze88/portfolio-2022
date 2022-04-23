@@ -37,11 +37,11 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚫Use a wide range of industry leading web technologies",
-        "⚫Create and launch Mobile Apps, Solo or as part of a team",
-        "⚫Implement quality, scalable website or mobile app code",
-        "⚫Create application Back-End functionality for web servers",      
-        "⚫Find ways to apply automation and maximize resource utilization"
+        " ▪ Use a wide range of industry leading web technologies",
+        " ▪ Create and launch Mobile Apps, Solo or as part of a team",
+        " ▪ Implement quality, scalable website or mobile app code",
+        " ▪ Create application Back-End functionality for web servers",      
+        " ▪ Find ways to apply automation and maximize resource utilization"
       ],
       softwareSkills: [
         {
@@ -177,9 +177,9 @@ const skills = {
       title: "Cloud Hosting",
       fileName: "CloudInfraImg",
       skills: [
-        "⚫Real-World experience deploying and managing services on many different popular platforms",
-        "⚫Using cloud based services and automation to meet needs and facilitate overhead",
-        "⚫Customizing Tech stack and flow to integrate with any given Cloud"
+        " ▪ Real-World experience deploying and managing services on many different popular platforms",
+        " ▪ Using cloud based services and automation to meet needs and facilitate overhead",
+        " ▪ Customizing Tech stack and flow to integrate with any given Cloud"
       ],
       softwareSkills: [
         {
@@ -246,9 +246,9 @@ const degrees = {
       alt_name: "CU",
       duration: "2017 - 2019",
       descriptions: [
-        "⚫I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
-        "⚫I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
-        "⚫I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
+        " ▪ I have studied core subjects like Data Structures, DBMS, Networking, Security, etc.",
+        " ▪ I have also completed various online courses for ML/DL, Web Development, Mobile App Development, etc.",
+        " ▪ I have implemented several projects based on what I've learnt under my Computer Engineering course. ",
       ],
       website_link: "https://www.sal.edu.in/",
     },
