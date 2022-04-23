@@ -1,10 +1,9 @@
-import React, { useState, memo, useRef, useEffect } from 'react';
+import React   from 'react';
 import "./Greeting.css";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
-// import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
 import lottielaptop from './laptop-lottie.json'
 // import Lottie from 'react-lottie-player'

@@ -1,11 +1,9 @@
-import React, { useState, memo, useRef, useEffect } from 'react';
+import React from 'react';
 import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
-import Footer from "../../components/footer/Footer";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import lottieArrow from './arrow.json'
-import { render } from 'react-dom';
 
 function Home(props) {
 

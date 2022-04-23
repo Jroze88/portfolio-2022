@@ -18,15 +18,14 @@ function App() {
     }
   }, []);
   
-  const [load, updateLoad] = useState(true);
   
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      updateLoad(false);
-    }, 1200);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     updateLoad(false);
+  //   }, 1200);
     
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   useEffect(() => {
     if (settings.googleTrackingID) {
@@ -38,7 +37,6 @@ function App() {
   }, []);
 
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
-  const useCursor = settings.useCustomCursor;
 
   return (
     <ThemeProvider theme={themes[theme]}>

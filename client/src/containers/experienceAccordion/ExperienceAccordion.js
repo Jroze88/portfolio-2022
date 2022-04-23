@@ -4,7 +4,7 @@ import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
 import ProjectCard from "../../components/ProjectCard/ProjectCard.js";
-import { projectsHeader, projects, socialMediaLinks } from "../../portfolio.js";
+import { projects } from "../../portfolio.js";
 
 
 function ExperienceAccordion(props) {
