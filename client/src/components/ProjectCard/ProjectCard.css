@@ -16,7 +16,7 @@
   width: 10px;
   height: 10px;
   background-color: blue;
-  margin-right: 0.25rem;
+  margin-right: 0.25em;
   border-radius: 100%;
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  margin-right: 0.75rem;
+  margin-right: 0.75em;
 }
 
 .repo-name-div {
@@ -33,7 +33,7 @@
 }
 
 .repo-svg {
-  margin-right: 0.5rem;
+  margin-right: 0.5em;
   min-width: 16px;
 }
 
@@ -43,7 +43,7 @@
   text-overflow: ellipsis;
   color: rgb(36, 41, 46);
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.75em;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: -0.5px;
@@ -52,7 +52,7 @@
 }
 
 .repo-star-svg {
-  margin-right: 0.3rem;
+  margin-right: 0.3em;
 }
 
 .repo-description {
@@ -83,7 +83,7 @@
   }
 
   .repo-description {
-    font-size: 2rem;
+    font-size: 16px;
   }
 
   .repo-details {
@@ -91,6 +91,6 @@
   }
 
   .repo-creation-date {
-    font-size: 2rem;
+    font-size: 16px;
   }
 }

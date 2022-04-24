@@ -31,7 +31,7 @@
   font-size: 1em; }
 
 .fa-2x {
-  font-size: 2em; }
+  font-size: 16px; }
 
 .fa-3x {
   font-size: 3em; }
@@ -69,10 +69,10 @@
     position: relative; }
 
 .fa-li {
-  left: -2em;
+  left: -16px;
   position: absolute;
   text-align: center;
-  width: 2em;
+  width: 16px;
   line-height: inherit; }
 
 .fa-border {
@@ -165,8 +165,8 @@
 
 .fa-stack {
   display: inline-block;
-  height: 2em;
-  line-height: 2em;
+  height: 16px;
+  line-height: 16px;
   position: relative;
   vertical-align: middle;
   width: 2.5em; }
@@ -182,7 +182,7 @@
   line-height: inherit; }
 
 .fa-stack-2x {
-  font-size: 2em; }
+  font-size: 16px; }
 
 .fa-inverse {
   color: #fff; }

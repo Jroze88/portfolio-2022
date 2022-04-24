@@ -3,8 +3,8 @@
 
 .#{$fa-css-prefix}-stack {
   display: inline-block;
-  height: 2em;
-  line-height: 2em;
+  height: 16px;
+  line-height: 16px;
   position: relative;
   vertical-align: middle;
   width: ($fa-fw-width*2);
@@ -23,7 +23,7 @@
 }
 
 .#{$fa-css-prefix}-stack-2x {
-  font-size: 2em;
+  font-size: 16px;
 }
 
 .#{$fa-css-prefix}-inverse {

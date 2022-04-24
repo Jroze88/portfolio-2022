@@ -1,5 +1,5 @@
 .social-media-div {
-  font-size: 2em;
+  font-size: 16px;
 }
 
 .icon-button i {
@@ -10,12 +10,12 @@
 }
 
 .icon-button i {
-  border-radius: 2.6rem;
+  border-radius: 2.6em;
   cursor: pointer;
   display: inline-block;
-  font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  font-size: 1.3em;
+  height: 2.6em;
+  line-height: 2.6em;
   margin: 0 5px;
   position: relative;
   text-align: center;
@@ -23,7 +23,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 2.6rem;
+  width: 2.6em;
   margin-bottom: 10px;
 }
 
