@@ -8,6 +8,7 @@ import { projects } from "../../portfolio.js";
 import onTheTableGaming from './wordpressxl.png'
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import mtgRocks from './mtgrocksxl.png'
 
 function ExperienceAccordion(props) {
   const theme = props.theme;
@@ -58,7 +59,7 @@ function ExperienceAccordion(props) {
                      </Panel>
                  <Panel
                 className="accord-panel3"
-                title={"Case Studies"}
+                title={"Freelance Live"}
                 key={"title323"}
                 // onChange={({ expanded }) => setrenderIT(!renderIT)}
               >
@@ -66,6 +67,7 @@ function ExperienceAccordion(props) {
              {/* {renderIT ?  <DangerousIframe/> : null} */}
 
              <WordPressProjectCard  theme={theme} />
+             <WordPressProjectCard2  theme={theme} />
                 </Panel>
                 <Panel
                 className="accord-panel4"
@@ -80,6 +82,11 @@ function ExperienceAccordion(props) {
   );
 }
 
+
+
+
+//////////////////////////////////////////////// These components need modularization at some point //////////////////////////////
+
 function WordPressProjectCard({  theme }) {
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
@@ -89,6 +96,7 @@ function WordPressProjectCard({  theme }) {
   const styles = style({
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
+    marginBottom: '24px',
     cursor: "pointer",
     borderRadius: "5px",
     height: "100%",
@@ -117,6 +125,51 @@ function WordPressProjectCard({  theme }) {
             Apache Wordpress deploy alongside Node.js with Automated Content Creation from across the Web
           </p>
           <img alt={'onthetablegaming.com wordpress homepage'} src={onTheTableGaming} className='wordpress-thumb' />
+          <div className="repo-details">
+          </div>
+        </div>
+      </Fade>
+    </div>
+  );
+}
+
+function WordPressProjectCard2({  theme }) {
+  function openRepoinNewTab(url) {
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
+
+  const styles = style({
+    boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
+    padding: "2rem",
+    cursor: "pointer",
+    borderRadius: "5px",
+    height: "100%",
+    transition: "all 0.2s ease-in-out",
+    ":hover": {
+      boxShadow: `${theme.imageDark} 0 2px 15px`,
+    },
+  });
+
+  return (
+    <div>
+      <Fade bottom duration={2000} distance="40px">
+        <div
+          {...styles}
+          key={'101'}
+          onClick={() => openRepoinNewTab('https://mtgrocks.com')}
+          style={{ backgroundColor: theme.body }}
+        >
+          <div className="repo-name-div">
+            <p className="repo-name" style={{ color: theme.secondaryText }}>
+              MTG Rocks
+            </p>
+            
+          </div>
+          <p className="repo-description" style={{ color: theme.text }}>
+            Simple WordPress layout with components like Elementor
+          </p>
+          <img alt={'mtg rocks wordpress homepage'} src={mtgRocks} className='wordpress-thumb' />
           <div className="repo-details">
           </div>
         </div>
