@@ -9,9 +9,15 @@ import onTheTableGaming from './wordpressxl.png'
 import { Fade } from "react-reveal";
 import { style } from "glamor";
 import mtgRocks from './mtgrocksxl.png'
+import cropped from './crop.gif'
+import wideCrop from './wide.gif'
 
 function ExperienceAccordion(props) {
   const theme = props.theme;
+  function openRepoinNewTabM(url) {
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
 
   return (
     <div className="experience-accord" >
@@ -59,7 +65,7 @@ function ExperienceAccordion(props) {
                      </Panel>
                  <Panel
                 className="accord-panel3"
-                title={"Freelance Live"}
+                title={"Wordpress"}
                 key={"title323"}
                 // onChange={({ expanded }) => setrenderIT(!renderIT)}
               >
@@ -71,9 +77,41 @@ function ExperienceAccordion(props) {
                 </Panel>
                 <Panel
                 className="accord-panel4"
-                title={"Case Studies"}
+                title={"Latest (App Builder)"}
                 key={"title3213"}
               >
+
+    <div>
+      <Fade bottom duration={2000} distance="40px">
+        <div
+          key={'101'}
+          onClick={() => openRepoinNewTabM('https://github.com/Jroze88/build-app-UI-react-native')}
+          style={{ backgroundColor: theme.body }}
+        >
+          <div  style={{margin: '25px'}} className="repo-name-div">
+            <p  className="repo-name" style={{ color: theme.secondaryText, margin: '25px' }}>
+            Desktop App to build mobile app UI's
+            </p>
+            
+          </div>
+          <p  className="repo-description" style={{ color: theme.text, margin: '25px' }}>
+          First foray into desktop apps. Electron App running a react-native layout with draggable components to add/change/customize and export for use
+          </p>
+          <img style={{margin: '25px'}} alt={'wide display of the app'} src={cropped} className='wordpress-thumb' />
+          <div style={{margin: '25px'}} className="repo-details">
+          </div>
+        </div>
+      </Fade>
+      <Fade bottom duration={2000} distance="40px">
+        <div
+          key={'101'}
+          onClick={() => openRepoinNewTabM('https://github.com/Jroze88/build-app-UI-react-native')}
+          style={{ backgroundColor: theme.body }}
+        >
+          <img style={{margin: '25px'}} alt={'cropped display of the app'} src={wideCrop} className='wordpress-thumb' /> 
+          </div>
+          </Fade>
+    </div>
 
                 </Panel>
         </Accordion>
