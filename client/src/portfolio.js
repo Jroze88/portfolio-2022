@@ -430,7 +430,7 @@ const projects = {
       id: "50",
       name: "Automated Content",
       url: "https://github.com/Jroze88/wordpress-node-server-ottg",
-      description: "Node.js server that would periodically gathers community content creators' posts/videos/articles and automate the assembly and posting of new articles to the Wordpress homepage",
+      description: "Node.js server periodically gathers community content creators' posts/videos/articles + automate the assembly and posting of new articles to the Wordpress homepage",
       languages: [
         {
           name: "NodeJS",
