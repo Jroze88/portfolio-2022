@@ -29,19 +29,19 @@
 
 .greeting-text {
   margin-top: 110px;
-  font-size: 4em;
+  font-size: 96px;
   line-height: 5px;
   font-family: "Bacalisties"!important;
 }
 
 .greeting-nickname {
-  font-size: 3em;
+  font-size: 25px;
   line-height: 0px;
   font-family: "JosefinSans";
 }
 
 .greeting-text-p {
-  font-size: 3em;
+  font-size: 35px;
   line-height: 40px;
   margin-right: 40px;
   font-family: "Monserrat";
@@ -88,7 +88,7 @@
     justify-content: space-around;
   }
   .greeting-text {
-    font-size: 3em;
+    font-size: 26px;
     margin-top: 0px;
     text-align: center;
   }
@@ -97,7 +97,7 @@
     text-align: center;
   }
   .greeting-text-p {
-    font-size: 1em;
+    font-size: 16px;
     margin-right: 0px;
     line-height: normal;
     text-align: center;
