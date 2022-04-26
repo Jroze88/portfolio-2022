@@ -15,7 +15,7 @@ const greeting = {
   nickname: "JRoze88 / Jroze",
   full_name: "Jano Roze",
   subTitle:
-    "Full Stack Developer, React-Native App Deployment, Servers, Storage, Solutions.",
+    "Full Stack Developer, React-Native App Deployment, Cloud Hosting, Servers",
   resumeLink:
     "https://drive.google.com",
   mail: "mailto:JR@gmail.com",
