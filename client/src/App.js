@@ -7,6 +7,8 @@ import { GlobalStyles } from "./global";
 import { settings } from "./portfolio";
 import ReactGA from "react-ga";
 
+
+
 function App() {
 
   useEffect(() => {
@@ -44,6 +46,7 @@ function App() {
         <GlobalStyles />
         <div>
         
+      
 
             <Main theme={themes[theme]} setTheme={setTheme} />
  

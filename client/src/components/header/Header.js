@@ -7,6 +7,7 @@ import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 import myPDF from './jano-roze-resume_PUBLIC.pdf'
+// import CubeCanvas from "../../background/bgeffect";
 
 function Header(props) {
   const theme = props.theme;
@@ -82,11 +83,11 @@ function Header(props) {
           <ul className="menu">
             <li>
               <NavLink
-                className="homei"
+                className="homei2"
                 to="/home"navColor
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.secondaryText}}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: 'transparent'}}
               >
                 Home
               </NavLink>

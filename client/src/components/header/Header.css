@@ -148,6 +148,11 @@
   color: #ffffff !important;
 }
 
+.homei2 {
+
+  color: #ffffff;
+}
+
 .ec {
   margin: 2px 5px 20px;
   transition: all 0.2s ease-in-out;
@@ -259,3 +264,8 @@
 .notouch {
   pointer-events: none;
 }
+
+.cubespin {
+  z-index: -200;
+width: 700px;
+height: 700px;}
