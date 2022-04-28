@@ -7,6 +7,7 @@ import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
 import myPDF from './jano-roze-resume_PUBLIC.pdf'
+import { ThemeContext } from "styled-components";
 // import CubeCanvas from "../../background/bgeffect";
 
 function Header(props) {
@@ -71,10 +72,10 @@ function Header(props) {
         <header className="header">
           <NavLink  to={link} tag={Link} className="logo">
             <span style={{ color: theme.text}}></span>
-            <span className="logo-name" style={{ color: theme.text }}>
+            <span className="logo-name" style={{ color: theme.accentColor }}>
               {greeting.logo_name}
             </span>
-            <span style={{ color: theme.text }}>Web Development</span>
+            <span style={{ color: theme.text }}></span>
           </NavLink>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn">
@@ -83,11 +84,11 @@ function Header(props) {
           <ul className="menu">
             <li>
               <NavLink
-                className="homei2"
+                className="homei"
                 to="/home"navColor
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: 'transparent'}}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.secondaryText}}
               >
                 Home
               </NavLink>
@@ -123,7 +124,7 @@ function Header(props) {
                 target="_blank"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
-                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.accentColor }}
+                style={{ borderRadius: 5, color: theme.navColor, backgroundColor: theme.secondaryText }}
               >
                 Contact and Resume
               </NavLink>

@@ -6,6 +6,7 @@ import { themes } from "./theme";
 import { GlobalStyles } from "./global";
 import { settings } from "./portfolio";
 import ReactGA from "react-ga";
+import CubeBG from './background/balls'
 
 
 
@@ -42,13 +43,14 @@ function App() {
 
   return (
     <ThemeProvider theme={themes[theme]}>
+     
       <>
         <GlobalStyles />
         <div>
         
-      
 
-            <Main theme={themes[theme]} setTheme={setTheme} />
+      <CubeBG />   
+      <Main theme={themes[theme]} setTheme={setTheme} />
  
         </div>
       </>

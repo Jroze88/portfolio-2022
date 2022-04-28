@@ -11,7 +11,7 @@ const settings = {
 const greeting = {
   title: "Hello.",
   title2: "JRoze",
-  logo_name: "{Full Stack // Mobile Apps}",
+  logo_name: "{Front-End // Back-End}",
   nickname: "JRoze88 / Jroze",
   full_name: "Jano Roze",
   subTitle:

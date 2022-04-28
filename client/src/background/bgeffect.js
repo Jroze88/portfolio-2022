@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
+import * as THREE from 'three';
 import React from 'react'
 
 function Box(props) {
@@ -36,3 +37,5 @@ export default function CubeCanvas(props) {
     </Canvas>
   )
 }
+
+
